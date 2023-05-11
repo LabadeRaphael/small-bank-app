@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>third</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
+    <script src="bankthird.js"></script>
+</head>
+<body onload="loadpage()">
+    <nav class="navbar bg-light">
+      <div class="row">
+        <div class="col-2"><h4 class="navbar-toggler-icon mt-lg-3 mt-3 ms-lg-5 d-block type="button  data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></span></div>
+        <div class="col ms-lg-4 mt-lg-3 fw-bold text-danger mt-3 fs-4">FLEXY BANKING SYSTEM</div>
+      </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Choose Your Transcation</h5>
+              <span type="button"class="btn-close"data-bs-dismiss="offcanvas"aria-label="Close"></span>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold active" aria-current="page" href="navbar-toggler-icon mt-lg-4 ms-lg-5 d-block type="button  data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">Dash Board</a>
+                </li>
+                <li class="nav-item fw-bold">
+                  <a class="nav-link" href="deposit.html">Deposit</a>
+                </li>
+                <li class="nav-item fw-bold">
+                  <a class="nav-link" href="withdraw.html">Withdraw</a>
+                </li>
+                <li class="nav-item fw-bold">
+                  <a class="nav-link" href="transfer.html">Transfer</a>
+                </li>
+                <li class="nav-item fw-bold">
+                  <a class="nav-link" href="recharge.html">Recharge</a>
+                </li>
+                <li class="nav-item fw-bold">
+                  <a class="nav-link" href="history.html">Transaction History</a>
+                </li>
+                <button class="btn btn-danger fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" id="slideOutToggle">Signout</button>
+                <div class="collapse collapse-vertical mt-3" id="collapseWidthExample">
+                  <div class="card card-body col-12 fw-bold bg-light">
+                    Are You Sure You want to Signout
+                    <div class="mt-3">
+                     <button class="btn btn-danger btn-sm mt-lg-0 mt-3 col-lg-3 float-end" onclick="signOutyes()">Yes</button>
+                     <a href="bankthird.html"style="text-decoration: none;"><button class="btn btn-danger btn-sm mt-lg-0 mt-3 col-lg-3 float-end me-2">No</button></a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="card text-center">
+      <div class="card-header">
+        <strong class="fs-3 text-lg-center d-block" id="welcome"  style="font-family: cursive;"></strong>
+      </div>
+      <div class="d-lg-flex mt-3 mb-5 justify-content-around"  >
+        <div class="card text-bg-light" style="min-width: 20rem;">
+          <div class="card-header fw-bold">Bank Verfication Number</div>
+          <div class="card-body">
+            <h5 class="card-title" id="bvn"></h5>
+           
+          </div>
+        </div>
+        <div class="card text-bg-light" style="min-width: 20rem;">
+          <div class="card-header fw-bold">Account Number</div>
+          <div class="card-body">
+            <h5 class="card-title"id="account"></h5>
+          </div>
+        </div>
+        <div class="card text-bg-light" style="min-width: 20rem;">
+          <div class="card-header fw-bold">BALANCE</div>
+          <div class="card-body">
+            <h5 class="card-title"  id="balance"></h5>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        <div class="d-flex col-12">
+          <img src="822551065.gif" class="col-6" alt="">
+          <img src="images.png" class="col-6" alt="">
+        </div>
+        <marquee behavior="loop" direction="right" class="text-danger fs-3 fw-bold"><em>We offer you the best banking system</em></marquee>
+      </div>
+    </div>
+    <div id="show"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
+    <script src="history.js"></script>
+</head>
+<body>
+  <nav class="navbar bg-light">
+    <div class="row">
+        <div class="col"><h4 class="navbar-toggler-icon mt-lg-4 ms-lg-5 d-block type="button  data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></span></div>
+        <div class="col"><h1 class="ms-lg- d-block mx-auto mt-lg-3 fw-bold text-danger">HISTORY</h1></div>    
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Choose Your Transcation</h5>
+          <span type="button"class="btn-close"data-bs-dismiss="offcanvas"aria-label="Close"></span>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="bankthird.html">Dash Board</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="deposit.html">Deposit</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="withdraw.html">Withdraw</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="transfer.html">Transfer</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="recharge.html">Recharge</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link active" href="history.html">Transaction History</a>
+            </li>
+            <button class="btn btn-danger fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Signout</button>
+            <div style="min-height: 120px;"  id="slideOutToggle" class="mt-3">
+              <div class="collapse collapse-vertical" id="collapseWidthExample">
+                <div class="card card-body col-12 fw-bold bg-light">
+                  Are You Sure You want to Signout
+                  <div class="mt-3">
+                   <button class="btn btn-danger btn-sm mt-lg-0 mt-3 col-lg-3 float-end" onclick="signOutyes()">Yes</button>
+                   <a href="history.html"style="text-decoration: none;"><button class="btn btn-danger btn-sm mt-lg-0 mt-3 col-lg-3 float-end me-2">No</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-12 mx-auto shadow p-3">
+      <div>
+        <table class="table table-bordered table-sm text-center bg-warning" style="min-height: 440px;">
+          <tr>
+            <th class="text col-4"><h3>Deposit Amount</h3><hr><div id="depositamount" class="text-light"></div></th>
+            <th class="text col-4"><h3>Deposit Date</h3><hr><div id="depositdate" class="text-light"></div></th>
+            <th class="text col-4"><h3>Deposit Time</h3><hr><div id="deposittime" class="text-light"></div></th>
+          </tr>
+          <tr>
+            <th class="text col-4"><h3>WithDraw Amount</h3><hr><div id="withdrawamount" class="text-light"></div></th>
+            <th class="text col-4"><h3>WithDraw Date</h3><hr><div id="withdrawdate"class="text-light"></div></th>
+            <th class="text col-4"><h3>WithDraw Time</h3><hr><div id="withdrawtime" class="text-light"></div></th>
+            </tr>
+          <tr>
+            <th class="text col-4"><h3>Transfer Amount</h3><hr><div id="transferamount" class="text-light"></div></th>
+            <th class="text col-4"><h3>Account Transfer To</h3><hr><div id="accounttransfer"class="text-light"></div></th>
+            <th class="text col-4"><h3>Transfer Date</h3><hr><div id="transferdate" class="text-light"></div></th>
+            </tr>
+          <tr>
+            <th class="text col-3"><h3>Recharge Amount</h3><hr><div id="rechargeamount" class="text-light"></div></th>
+            <th class="text col-3"><h3>Recharge Date</h3><hr><div id="rechargedate" class="text-light"></div></th>
+            <th class="text col-3"><h3>Recharge Time</h3><hr><div id="rechargetime" class="text-light"></div></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
